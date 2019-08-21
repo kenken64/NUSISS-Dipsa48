@@ -1,0 +1,32 @@
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+<p>
+  {{numberOfPeople}}
+</p>
+
+<ul>
+  <li *ngFor="let fruit of fruits; let i= index;">
+    {{fruit}}
+  </li>
+</ul>
+
+<p *ngIf="lengthOfCart > 4">
+  The cart has more than 4 items
+</p>
+
+<p *ngIf="lengthOfCart < 4">
+  The cart has less than 4 items
+</p>
+
+<input type="text" [disabled]="isDisabled" 
+    [ngClass]="{ 'grey-border': isDisabled, 'blue-border': !isDisabled}">
+
+<button (click)="pressAButton()">Submit</button>
+<p>{{buttonPressed}}</p>
+
+<app-font-size [message]='title' (onFontSize)='sizeChanged($event)'>
+
+</app-font-size>
