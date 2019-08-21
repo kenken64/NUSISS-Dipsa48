@@ -42,6 +42,28 @@
           #phone="ngModel"/>
     </mat-form-field>
     
+    
+    <mat-form-field>
+      <mat-select placeholder="Guest" [(ngModel)]="model.guest" name="guest"
+      #guest="ngModel">
+        <mat-option *ngFor="let g of [0, 1, 2, 3]"
+        [value]="g">
+          {{ g }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    
+    <mat-checkbox placeholder="newsletter" [(ngModel)]="model.newsletter" name="newsletter"
+      #newsletter="ngModel">
+        Yes, I wish to receive newsletter
+    </mat-checkbox>
+    <mat-divider></mat-divider>
+    <br>
+    <mat-checkbox name="fish" ngModel (change)="diet[0]= $event.checked">Fish</mat-checkbox>
+    <mat-checkbox name="meat" ngModel (change)="diet[1]= $event.checked">Meat</mat-checkbox>
+    <mat-checkbox name="vegie" ngModel (change)="diet[2]= $event.checked">Vegetables</mat-checkbox>
+    <mat-divider></mat-divider>
+    <br>
     <mat-radio-group required [(ngModel)]="model.attending" name="attending"
     #attending="ngModel">
       <mat-radio-button value=“yes”>
@@ -51,7 +73,26 @@
        No
       </mat-radio-button>
     </mat-radio-group>
+    <mat-divider></mat-divider>
+    <br>
+    <mat-form-field>
+      <input matInput
+      [matDatepicker]="datepicker"
+      placeholder="Date of birth"
+      [(ngModel)]="model.dob" name="dob"
+      #dob="ngModel" >
+      <mat-datepicker-toggle matSuffix
+      [for]="datepicker">
+      </mat-datepicker-toggle>
+      <mat-datepicker #datepicker>
+      </mat-datepicker>
+    </mat-form-field>
 
+    <mat-form-field>
+      <input matInput placeholder="Feedback time" [ngxTimepicker]="timepicker" [(ngModel)]="model.feedbacktime" name="feedbacktime"
+      #feedbacktime="ngModel">
+      <ngx-material-timepicker #timepicker></ngx-material-timepicker>
+    </mat-form-field>
     <br>
     <button
     mat-raised-button
