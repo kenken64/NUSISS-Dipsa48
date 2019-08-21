@@ -1,20 +1,36 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<div class="container">
+    <h1>RSVP Form</h1>
+    <form #form="ngForm" (ngSubmit)="processForm(form)">
+        <div class="form-group">
+          <label>Name:  
+          </label>
+          <input type="text" id="name" required [(ngModel)]="model.name" name="name"
+            #name="ngModel">
+        </div>
+        
+        <div class="form-group">
+            <label>Email:  
+            </label>
+            <input type="text" id="email" required email [(ngModel)]="model.email" name="email"
+              #email="ngModel"/>
+        </div>
+        <div class="form-group">
+            <label>Phone:
+              <input type="text" required minlength="8" [(ngModel)]="model.phone" name="phone"
+              #phone="ngModel"/>
+            </label>
+        </div>
+        <div class="form-group">
+            <label>Attending:
+                <input type="radio" value="yes" required [(ngModel)]="model.attending" name="attending"
+                #attending="ngModel">Yes
+                <input type="radio" value="no" required [(ngModel)]="model.attending" name="attending"
+                #attending="ngModel">No
+            </label>
+        </div>
+        
+        <button type="submit" class="btn btn-success" [disabled]="form.invalid">
+          Send
+        </button>
+      </form>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
-
