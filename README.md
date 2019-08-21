@@ -11,7 +11,7 @@ Your First App
 * Directives
 * Template reference
 
-## Form
+## Forms
 
 * Define an Angular form
 * Capture form data
@@ -28,7 +28,7 @@ Your First App
 * Date picker / time picker
 * Affordance , hint and error messages
 
-## Service and promise
+## Service and Promise
 
 ## HttpClient
 
