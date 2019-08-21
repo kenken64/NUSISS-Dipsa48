@@ -9,7 +9,8 @@ Your First App
 * Event Binding
 * Component to component comm
 * Directives
-* 
+* Template reference
+
 ## Form
 
 * Define an Angular form
