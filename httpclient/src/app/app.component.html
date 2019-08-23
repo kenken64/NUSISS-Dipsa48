@@ -7,10 +7,19 @@
 
 <mat-card class="example-card">
   
-  <img mat-card-image src="https://www.nea.gov.sg/assets/images/map/base-853.png" alt="Photo of Weather">
+  <img mat-card-image [src]="imageUrl" alt="Photo of Weather">
   <mat-card-content>
     <p>
-        Country : Singapore
+        <mat-form-field>
+            <mat-label>Countries</mat-label>
+            <select matNativeControl placeholder="City" [(ngModel)]="model.city" name="city" (change)="fetchWeatherByCity($event)"
+            #city="ngModel">
+            <option *ngFor="let country of countries"
+            [value]="country.city">
+            {{ country.city }} , {{ country.countryName }}
+            </option>
+            </select>
+        </mat-form-field>
     </p>
     <p>
       Temperature : {{model.temp - 273.15 | number}}
