@@ -1,0 +1,19 @@
+<form class="example-form" [formGroup]="pictureForm" (ngSubmit)="onSubmit()">
+<mat-form-field class="example-full-width">
+    <input matInput placeholder="Title" formControlName="title">
+</mat-form-field>
+
+<mat-form-field class="example-full-width">
+        <input matInput placeholder="Author" formControlName="author">
+</mat-form-field>
+
+<mat-form-field class="example-full-width">
+<textarea matInput placeholder="Leave a description" formControlName="description"></textarea>
+</mat-form-field>
+
+<mat-form-field class="example-full-width">
+        <input matInput placeholder="Image URL" formControlName="img">
+</mat-form-field>
+
+<button type="submit" mat-raised-button color="primary" [disabled]="!pictureForm.valid">Save</button>    
+</form>

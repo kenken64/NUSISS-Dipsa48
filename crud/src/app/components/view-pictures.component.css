@@ -1,0 +1,8 @@
+.example-card {
+    max-width: 400px;
+  }
+  
+  .example-header-image {
+    background-image: url('https://previews.123rf.com/images/vdat85/vdat851801/vdat85180100050/94447727-outlined-person-icon-on-transparent-background-.jpg');
+    background-size: cover;
+  }

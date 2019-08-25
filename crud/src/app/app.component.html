@@ -1,0 +1,11 @@
+<mat-toolbar color="primary">
+  <span> &nbsp; </span>
+  <img src="https://cdn4.iconfinder.com/data/icons/user-interface-flow-and-patterns-volume-ii/48/50-512.png" class="logo" (click)="navigateToHome()">
+  <span noWrap=false> CRUD Example </span>
+  <span class="example-spacer"></span>
+  <span> &nbsp;</span>
+  <button mat-icon-button (click)="navigateToAddPictures()">
+    Add
+  </button>
+</mat-toolbar>
+<router-outlet></router-outlet>

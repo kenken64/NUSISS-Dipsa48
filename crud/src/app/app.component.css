@@ -1,0 +1,8 @@
+.logo {
+    width: 48px;
+    margin-right: 15px;
+}
+
+.example-spacer {
+    flex: 1 1 500px;
+}

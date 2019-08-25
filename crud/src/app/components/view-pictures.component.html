@@ -1,0 +1,17 @@
+<mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>{{ picture.title }}</mat-card-title>
+      <mat-card-subtitle>{{ picture.author }}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="{{ picture.img }}" alt="{{ picture.title }}">
+    <mat-card-content>
+      <p>
+        {{ picture.description }}
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="primary" (click)="back()">BACK</button>
+      <button mat-raised-button color="primary" (click)="onEdit(picture.id)">EDIT</button>
+    </mat-card-actions>
+  </mat-card>

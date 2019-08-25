@@ -1,0 +1,70 @@
+{
+  "author": [
+    {
+      "id": 1,
+      "age": 16,
+      "name": "Andy"
+    },
+    {
+      "id": 2,
+      "age": 22,
+      "name": "Lisa"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "date": "03-18-2016",
+      "message": "Nice!"
+    },
+    {
+      "id": 2,
+      "date": "06-21-2017",
+      "message": "Great view!"
+    }
+  ],
+  "pictures": [
+    {
+      "id": 1,
+      "author": "Lisa",
+      "description": "A wonderful view of nature",
+      "img": "https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/8V46UZCS0V.jpg",
+      "title": "A natural view"
+    },
+    {
+      "id": 2,
+      "author": "Andy",
+      "description": "Seaside sunset",
+      "img": "https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/8V46UZCS0V.jpg",
+      "title": "Landscape view"
+    },
+    {
+      "id": 3,
+      "author": "Kenneth",
+      "description": "Seaside sunrise",
+      "img": "https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/8V46UZCS0V.jpg",
+      "title": "Landscape view"
+    },
+    {
+      "id": 4,
+      "author": "Chuk",
+      "description": "Half moon",
+      "img": "https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/8V46UZCS0V.jpg",
+      "title": "Landscape view"
+    },
+    {
+      "id": 5,
+      "author": "Bala",
+      "description": "Asteroid towards earth",
+      "img": "https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/8V46UZCS0V.jpg",
+      "title": "Landscape view"
+    },
+    {
+      "author": "Aiden Phang",
+      "description": "This is bad! I am going to reduce plastic consumption!",
+      "img": "https://cdn.vox-cdn.com/thumbor/3FDaAhzTfAgtTv5ehy-Dssl_IVI=/0x0:1000x667/920x613/filters:focal(420x254:580x414):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61101995/nasa-opportunity-mars-rover.0.jpg",
+      "title": "Rainforest fire",
+      "id": 6
+    }
+  ]
+}
