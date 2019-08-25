@@ -1,5 +1,6 @@
 export class Weather {
-    constructor(public temp: number,
+    constructor(public city: string,
+        public temp: number,
         public pressure: number,
         public humidity: number,
         public description: string,
